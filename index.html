@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cafe Study With You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header style="text-align: center; margin-top: 20px;">
+        <h1>Menu Cafe Study With You</h1>
+    </header>
+
+    <main class="menu-grid">
+        <article class="menu-item">
+            <img src="assets/Espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>Rp 15.000</p>
+            
+            <label>Jumlah: </label>
+            <input type="number" id="qty-espresso" value="1" min="1">
+            <br>
+            <label>Tipe: </label>
+            <select id="type-espresso">
+                <option value="Dine In">Dine In</option>
+                <option value="Take Away">Take Away</option>
+            </select>
+            <br>
+            <button onclick="pesanMenu('Espresso', 15000, 'qty-espresso', 'type-espresso')">Pesan Sekarang</button>
+        </article>
+        
+        <article class="menu-item">
+            <img src="assets/Late.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p>Rp 20.000</p>
+            
+            <label>Jumlah: </label>
+            <input type="number" id="qty-latte" value="1" min="1">
+            <br>
+            <label>Tipe: </label>
+            <select id="type-latte">
+                <option value="Dine In">Dine In</option>
+                <option value="Take Away">Take Away</option>
+            </select>
+            <br>
+            <button onclick="pesanMenu('Latte', 20000, 'qty-latte', 'type-latte')">Pesan Sekarang</button>
+        </article>
+    </main>
+
+    <div id="display-pesanan" class="pesanan-box">
+        <h3>Detail Pesanan Anda</h3>
+        <p>Silakan pilih menu, atur jumlah & tipe, lalu klik pesan.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

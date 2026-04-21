@@ -1,0 +1,73 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+    background-color: #fdeaef;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.menu-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f5acc2;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover { background-color: #f5acc2; }
+
+.pesanan-box {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px dashed #f5acc2;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f7f5f5;
+}
+
+@media (max-width: 480px) {
+    .menu-grid { grid-template-columns: 1fr; }
+}
+
+header h1 {
+    color: #FF1493;
+}
