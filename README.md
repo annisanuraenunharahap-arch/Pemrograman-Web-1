@@ -1,4 +1,4 @@
-![Teks Alternatif](Late.jpg)
+![Screenshot Dashboard](assets/Espresso.jpg.png)
 # Judul Besar (H1)
 ## Judul Sedang (H2)
 ### Judul Kecil (H3)
